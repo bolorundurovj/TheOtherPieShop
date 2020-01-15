@@ -19,7 +19,9 @@ namespace TheOtherPieShop.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            ViewBag.Title = "Pie overview";
+            var pies = _pieRepository.GetAllPies().OrderBy(p => p.Name);
+            return View(pies);
         }
     }
 }
