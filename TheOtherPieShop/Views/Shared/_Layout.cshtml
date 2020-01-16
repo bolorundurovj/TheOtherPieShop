@@ -3,11 +3,15 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="~/content/site.css"/>
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="container body-content">
+        <div class="row">
+            @RenderBody()
+        </div>
     </div>
 </body>
 </html>
