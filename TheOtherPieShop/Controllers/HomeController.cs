@@ -28,6 +28,7 @@ namespace TheOtherPieShop.Controllers
                 Title = "Welcome to The Other Pie Shop",
                 Pies = pies.ToList()
             };
+
             return View(homeViewModel);
         }
     }
